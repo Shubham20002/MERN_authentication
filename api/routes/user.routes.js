@@ -1,11 +1,8 @@
-
+const signincontroller=require("../controller/user.controller")
 const express = require('express');
 
 const router = express.Router();
 
-router.get('/signin', function (req, res, next) {
-    console.log("Router Working");
-    res.send("sign in router");
-})
+router.post('/signup',signincontroller.signup);
 
 module.exports=router;

@@ -6,6 +6,8 @@ const userRouter=require('./routes/user.routes');
 
 const app=express();
 
+app.use(express.urlencoded());
+
 app.listen(port,(err)=>{
     console.log("server start on port no: "+port);
 });
